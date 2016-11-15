@@ -1,0 +1,31 @@
+Cuando utilicemos Kali Linux como una VM los pasos que daremos son los siguientes:
+
+
+  0) Deteccion de dispositivos USB (por ejemplo: tarjeta Wifi ALFA):       
+       
+     Por defecto trás instalar Virtualbox no podremos agregar/asignar dispositivos USB a las máquinas virtuales. Lo que tendremos que hacer es lo siguiente en la máquina HOST donde estemos
+     corriendo Virtualbox:
+       
+       >sudo adduser USERNAME vboxusers
+         
+     es decir:
+         
+       >sudo adduser etxahun vboxusers
+           
+      A continuación, para que los cambios surtan efecto haremos un LOGOUT y LOGIN.
+           
+  1) Cambiar el idioma del teclado
+  2) Cambiar el modo de desplazamiento del trackpad/rueda_ratón del portátil
+  3) Instalar las "VirtualBox Guest Additions in Kali Linux":
+  
+     >apt-get update
+     >apt-get install -y virtualbox-guest-x11
+     >reboot
+
+  4) Crear carpetas compartidas con el equipo Host.
+  
+     
+Referencias:
+
+    - https://help.ubuntu.com/community/VirtualBox/USB
+  
